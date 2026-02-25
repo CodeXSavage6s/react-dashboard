@@ -11,7 +11,7 @@ export default function Profile() {
   const fetchProfile = async () => {
     const token = localStorage.getItem("token");
 
-    const res = await fetch("http://localhost:5000/api/auth/me", {
+    const res = await fetch("https://react-dashboard-backend-yzxo.onrender.com/api/auth/me", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -36,7 +36,7 @@ useEffect(() => {
         const { latitude, longitude } = position.coords;
 
         const res = await fetch(
-          `http://localhost:5000/api/auth/weather?lat=${latitude}&lon=${longitude}`
+          `https://react-dashboard-backend-yzxo.onrender.com/api/auth/weather?lat=${latitude}&lon=${longitude}`
         );
 
         if (!res.ok) throw new Error("Weather fetch failed");
