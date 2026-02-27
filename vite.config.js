@@ -12,7 +12,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       manifest: {
         name: 'Savage Dashboard',
-        short_name: 'Savage',
+        short_name: 'Dashboard',
         description: 'Savage React Dashboard App',
         theme_color: '#0f172a',
         background_color: '#0f172a',
