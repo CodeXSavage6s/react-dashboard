@@ -7,7 +7,7 @@ function Main() {
   const { page } = useContext(PageContext);
 
   return (
-    <div className="absolute Main px-[2vh] sm:w-[80%] w-full right-0">
+    <div className="absolute Main px-[2vh] md:w-[80%] w-full right-0">
       {page === "dashboard" && <Dashboard />}
       {page === "profile" && <Profile />}
     </div>

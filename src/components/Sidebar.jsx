@@ -15,12 +15,12 @@ function Sidebar({ setP }) {
 };
 
   return (
-    <div className="absolute Sidebar  bg-[var(--bg-card)] text-[var(--text-primary)] hover:bg-[var(--bg-card-hover)] transition-colors duration-200 z-700">
+    <div className="absolute Sidebar  text-[var(--text-primary)] hover:bg-[var(--bg-card-hover)] transition-colors duration-200 z-700 ">
       <div
       className="border-b-8 rounded-2xl text-[small]"
       onClick={() => setSeen(e => !e)}>AdminPanel</div>
       <div
-      className={`all1 fixed flex flex-col rounded-2xl justify-items-center p-[2vh] w-[50vw] h-[100vh] z-50 bg-[var(--bg-card)] left-0 md:w-[20vw] ${!seen ? 'block' : 'hidden'} md:block`}>
+      className={`all1 fixed flex flex-col rounded-2xl justify-items-center p-[2vh] w-[50vw] h-[100vh] z-50 bg-[var(--bg-card)] h-[80vh] left-0 top-17 md:w-[20vw] ${!seen ? 'block' : 'hidden'} md:block`}>
       <NavigateBtn setting="dashboard" setP={setPage}
         pick={page === "dashboard" && "true"}
         setS={setSeen}
@@ -48,10 +48,9 @@ function Sidebar({ setP }) {
       setS={setSeen}>
         Profile
       </NavigateBtn>
-      <div className=""></div>
       <div
   onClick={handleLogout}
-  className="cursor-pointer text-red-500 hover:text-red-700 transition-colors duration-200 p-2"
+  className="absolute right-10 bottom-30 cursor-pointer text-red-500 hover:text-red-700 transition-colors duration-200 p-2"
 >
   Logout
 </div>

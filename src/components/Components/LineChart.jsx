@@ -21,7 +21,7 @@ const data = [
 
 export default function SalesOverview() {
   return (
-    <div className="all bg-[var(--bg-card)] rounded-2xl shadow-xl mt-[2vh] transition-colors duration-200">
+    <div className="all bg-[var(--bg-card)] rounded-2xl shadow-xl mt-[2vh] p-[1vh] transition-colors duration-200">
       
       {/* Header */}
       <div className="flex justify-between items-center mx-[1vh] mb-[1vh] transition-colors duration-200">
@@ -33,7 +33,7 @@ export default function SalesOverview() {
       </div>
 
       {/* Chart */}
-      <div className="h-40 ml-[-10%] md:h-80">
+      <div className="h-50">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={data}>
             <CartesianGrid stroke="#334155" strokeDasharray="3 3" />

@@ -19,7 +19,7 @@ const COLORS = ["#3b82f6", "#a855f7", "#f97316", "#1e40af"];
 const total = data.reduce((acc, item) => acc + item.value, 0);
 export default function TrafficSources() {
   return (
-    <div className="all bg-[var(--bg-card)] rounded-2xl shadow-xl p-[1vh] mt-[2vh] transition-colors duration-200 text-[var(--text-primary)]">
+    <div className="all bg-[var(--bg-card)] rounded-2xl p-5 shadow-xl p-[1vh] mt-[2vh] transition-colors duration-200 text-[var(--text-primary)]">
       
       {/* Header */}
       <div className="flex justify-between items-center mb-[1vh]">

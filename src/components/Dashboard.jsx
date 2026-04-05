@@ -44,7 +44,7 @@ function Dashboard() {
 
   return (
     <div>
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
       <Card 
       top="Total Users"
       middle="8,000"
@@ -65,7 +65,7 @@ function Dashboard() {
       bottom="Current Location"/>
       </div>
       <div
-      className="grid gap-[1vw] sm:grid-cols-2">
+      className="grid gap-[1vw] grid-cols-1 md:grid-cols-2">
       <SalesOverview />
       <TrafficSources />
       </div>
