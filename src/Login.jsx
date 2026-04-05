@@ -68,17 +68,17 @@ function Login({ onLoginSuccess, goToRegister }) {
             type="email"
             required
             placeholder="Email"
-            className="w-full mb-4 p-[1vh] rounded-lg bg-[var(--bg-card-hover)] text-[var(--text-secondary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-secondary)]"
+            className="w-full mb-4 p-[1vh] px-2 rounded-lg bg-[var(--bg-card-hover)] text-[var(--text-secondary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-secondary)]"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
 
-        <div className="flex bg-[var(--bg-card-hover)] w-full p-0 mb-4 rounded-lg items-center">
+        <div className="flex bg-[var(--bg-card-hover)] w-full p-0 mb-4 rounded-lg justify-between items-center has-focus:border-2 border-[var(--color-secondary)] pr-2">
           <input
             type={pHide ? "password" : "text"}
             required
             placeholder="Password"
-            className=" p-[1vh] rounded-lg bg-[var(--bg-card-hover)] text-[var(--text-secondary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-secondary)]"
+            className=" p-[1vh] rounded-lg bg-[var(--bg-card-hover)] text-[var(--text-secondary)] outline-none"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             onKeyDown={(e) => {
